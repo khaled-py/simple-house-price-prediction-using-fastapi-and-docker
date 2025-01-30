@@ -52,14 +52,14 @@
 <body>
     <h1>House Price Prediction</h1>
     <form method="post" action="/predict">
-        <label for="MedInc">Median Income (MedInc):</label>
-        <input type="number" step="0.01" id="MedInc" name="MedInc" value="{{ MedInc }}" required>
+        <label for="MedInc">Median Income :</label>
+        <input type="number" step="1.0" id="MedInc" name="MedInc" value="{{ MedInc }}" required>
 
-        <label for="AveRooms">Average Rooms (AveRooms):</label>
-        <input type="number" step="0.01" id="AveRooms" name="AveRooms" value="{{ AveRooms }}" required>
+        <label for="AveRooms">Average Rooms :</label>
+        <input type="number" step="1.0" id="AveRooms" name="AveRooms" value="{{ AveRooms }}" required>
 
-        <label for="AveOccup">Average Occupancy (AveOccup):</label>
-        <input type="number" step="0.01" id="AveOccup" name="AveOccup" value="{{ AveOccup }}" required>
+        <label for="AveOccup">Average Occupancy :</label>
+        <input type="number" step="1.0" id="AveOccup" name="AveOccup" value="{{ AveOccup }}" required>
 
         <input type="submit" value="Predict">
     </form>
